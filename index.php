@@ -127,6 +127,53 @@
         // xor
         // !
         ?>
+
+        <?php
+        //Data types in php
+        //string
+        echo "<br>";
+        echo "Data types in PHP";
+        $var="This is string";
+        echo "<br>";
+        echo var_dump($var);             //string(14) "This is string"
+
+        //integer
+        $var=45;
+        echo "<br>";
+        echo var_dump($var);            //int(45)
+
+        //float
+        $var=45.5;
+        echo "<br>";
+        echo var_dump($var);           //float(45.5)
+
+        //boolean
+        $var=true;
+        echo "<br>";
+        echo var_dump($var);          //bool(true)
+
+        //array
+        $var=[23,69,90];
+        echo "<br>";
+        echo var_dump($var);         //array(3) { [0]=> int(23) [1]=> int(69) [2]=> int(90) }
+
+        //object
+        $student = new stdClass();
+        $student->name = "abc";
+        $student->roll_no = 38;
+        echo "<br>";
+        echo $student->name;         //abc
+        echo "<br>";
+        echo $student->roll_no;      //38
+        echo "<br>";
+
+        //to declare constant use define()
+        define("PI", 3.14);
+        echo "<br>";
+        echo PI;
+
+       ?>
+    </div>
     </div>
 </body>
 </html>
